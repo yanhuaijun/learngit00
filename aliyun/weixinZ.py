@@ -108,6 +108,8 @@ szzs, gzzs = shzs()
 
 #获取微信好友列表、选择好友、天气信息发送
 def send_news():
+    szs, gzpy, gzby, gzth = tqyp()
+    szzs, gzzs = shzs()
     friends =bot.friends()#获取微信好友
     for i in friends:#循环好友
         # print(i.raw)

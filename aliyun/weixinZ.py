@@ -136,14 +136,24 @@ def send_news():
             aa.send(gzzs)
             aa.send('以上信息均由微信自动推送！')
             print(aa)
-        elif e2 == "某人":
-            aa = bot.friends().search(e2)[0]  # 填入发送人名
-            aa.send("亲，天气预警信息推送，请注意查收:")
-            aa.send(szs)  # 发送消息            aa.send(tq01)
-            aa.send(szzs)
-            aa.send('爱你哟，么么哒！')
-            # aa.send('以上信息均由微信自动推送！')
-            print(aa)
+        # elif e2 == "李俊":
+        #     aa = bot.friends().search(e2)[0]  # 填入发送人名
+        #     aa.send("亲，天气预警信息推送，请注意查收:")
+        #     aa.send(szs)  # 发送消息            aa.send(tq01)
+        #     aa.send(szzs)
+        #     # aa.send('爱你哟，么么哒！')
+        #     aa.send('以上信息由怀军自动推送！')
+        #     print(aa)
+        # elif e2 == "某人":
+        #     aa = bot.friends().search(e2)[0]  # 填入发送人名
+        #     aa.send("亲，天气预警信息推送，请注意查收:")
+        #     aa.send(szs)  # 发送消息            aa.send(tq01)
+        #     aa.send(szzs)
+        #     aa.send('爱你哟，么么哒！')
+        #     # aa.send('以上信息均由微信自动推送！')
+        #     print(aa)
+
+
         #每86400秒（1天），发送1次
             t = Timer(28800,send_news)
             t.start()

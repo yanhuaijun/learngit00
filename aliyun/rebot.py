@@ -142,6 +142,8 @@ def echo(message):
          return '谢谢夸奖 (๑•̀ㅂ•́)ﻭ✧'
         elif re.compile(".*?傻逼.*?").match(msg1):
            return '说你自己吗？'
+        elif re.compile(".*?下班.*?").match(msg1):
+           return '下班了是不是很开心呀'
         else:
           return '噢，淘气，请换一个姿势！\n天气查询输入：广州\n区号查询输入：广州区号\n邮政编码查询输入：广州编码'
     

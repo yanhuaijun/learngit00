@@ -21,9 +21,9 @@ def my_db(msg):
     conn = pymysql.Connect(
         host='47.106.143.70',  ##mysql服务器地址
         port=3306,  ##mysql服务器端口号
-        user='yhj666',  ##用户名
+        user='666',  ##用户名
         passwd='123456',  ##密码  J5p";~OVazNl%y)?
-        db='yhj666',  ##数据库名
+        db='666',  ##数据库名
         charset='utf8',  ##连接编码
     )
     sq1 = 'SELECT * FROM cityid WHERE city_name LIKE "%s"' % ('%' + msg + '%')

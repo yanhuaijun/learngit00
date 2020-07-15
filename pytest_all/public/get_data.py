@@ -3,7 +3,7 @@ import requests,json,time
 from bs4 import BeautifulSoup
 import xlrd
 def qhouzgui():
-    workbook = xlrd.open_workbook('C:/Users/qaunhou006/Desktop/jiekou.xlsx')  #表格路径
+    workbook = xlrd.open_workbook('../testdata/jiekou.xlsx')  #表格路径
     table = workbook.sheets()[0]   #第一个表[0]
     zguilist=[]
     for jj in range(1,table.nrows):

